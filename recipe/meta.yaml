@@ -22,11 +22,16 @@ requirements:
   build:
     - python
     - setuptools
+    - backports.ssl >=0.0.9
+    - mock ==1.3.0
+    - pyopenssl >=0.15.1
+    - six
+    - sphinx
 
   run:
     - python
     - backports.ssl >=0.0.9
-    - mock ==1.3.0  # [py2k]
+    - mock ==1.3.0
     - pyopenssl >=0.15.1
     - six
     - sphinx
