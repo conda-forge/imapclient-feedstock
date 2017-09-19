@@ -1,21 +1,21 @@
-{%set name = "IMAPClient" %}
-{%set version = "1.0.2" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "3b6e9a5f0484be0151f4106c5aba546eb3a382905ba69e86fa52ce5de95fed3f" %}
-{%set build_num = "1" %}
+{% set name = "IMAPClient" %}
+{% set version = "1.0.2" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "3b6e9a5f0484be0151f4106c5aba546eb3a382905ba69e86fa52ce5de95fed3f" %}
+{% set build = 1 %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build_num }}
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
