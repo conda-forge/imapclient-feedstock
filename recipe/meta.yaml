@@ -1,8 +1,8 @@
 {%set name = "IMAPClient" %}
-{%set version = "1.0.2" %}
+{%set version = "2.0.0" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "3b6e9a5f0484be0151f4106c5aba546eb3a382905ba69e86fa52ce5de95fed3f" %}
+{%set hash_val = "de02cedbb5de2f061907fcbfb1a85a1f6ebfb8b5fa523bc003670fb02222e579" %}
 {%set build_num = "1" %}
 
 package:
@@ -15,7 +15,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: {{ build_num }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
