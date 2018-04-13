@@ -30,22 +30,6 @@ requirements:
 test:
   imports:
     - imapclient
-    - imapclient.test
-    - imapclient.config
-    - imapclient.datetime_util
-    - imapclient.fixed_offset
-    - imapclient.imap4
-    - imapclient.imap_utf7
-    - imapclient.imapclient
-    - imapclient.imaplib_ssl_fix
-    - imapclient.interact
-    - imapclient.livetest
-    - imapclient.response_lexer
-    - imapclient.response_parser
-    - imapclient.response_types
-    - imapclient.tls
-    - imapclient.util
-    - imapclient.version
 
 about:
   home: http://imapclient.freshfoo.com/
