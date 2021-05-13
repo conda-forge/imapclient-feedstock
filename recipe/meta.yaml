@@ -1,5 +1,5 @@
 {% set name = "IMAPClient" %}
-{% set version = "2.0.0" %}
+{% set version = "2.2.0" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash_val = "de02cedbb5de2f061907fcbfb1a85a1f6ebfb8b5fa523bc003670fb02222e579" %}
