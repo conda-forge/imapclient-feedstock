@@ -3,7 +3,7 @@ About imapclient
 
 Home: http://imapclient.freshfoo.com/
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/imapclient-feedstock/blob/master/LICENSE.txt)
 
