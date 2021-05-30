@@ -1,25 +1,21 @@
 {% set name = "IMAPClient" %}
-{% set version = "2.0.0" %}
-{% set compress_type = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "de02cedbb5de2f061907fcbfb1a85a1f6ebfb8b5fa523bc003670fb02222e579" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 0578056b9fff5316516f460810fc8b485f6fd7e3f4203786c130e222007d63f3
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
 
@@ -30,10 +26,14 @@ requirements:
 test:
   imports:
     - imapclient
+  commands:
+    - pip check
+  requires: 
+    - pip
 
 about:
   home: http://imapclient.freshfoo.com/
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: COPYING
   license_family: BSD
   summary: 'Easy-to-use, Pythonic and complete IMAP client library'
