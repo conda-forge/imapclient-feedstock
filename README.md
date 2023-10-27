@@ -1,11 +1,11 @@
-About imapclient
-================
+About imapclient-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/imapclient-feedstock/blob/main/LICENSE.txt)
 
 Home: http://imapclient.freshfoo.com/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/imapclient-feedstock/blob/main/LICENSE.txt)
 
 Summary: Easy-to-use, Pythonic and complete IMAP client library
 
