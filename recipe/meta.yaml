@@ -1,5 +1,5 @@
 {% set name = "IMAPClient" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 93a283c733288639b07989ffcf950f4046c831f1107f634de63b4e1ef9b75eb5
+  sha256: 78e6d62fbfbbe233e1f0e0e993160fd665eb1fd35973acddc61c15719b22bc02
 
 build:
   noarch: python
