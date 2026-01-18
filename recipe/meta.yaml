@@ -1,17 +1,17 @@
 {% set name = "IMAPClient" %}
-{% set version = "3.0.1" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 78e6d62fbfbbe233e1f0e0e993160fd665eb1fd35973acddc61c15719b22bc02
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
+  sha256: b0413a516ffcc4b4d69f2c611c0e95da57968edf5a5c78ac82d1bf882305facc
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
