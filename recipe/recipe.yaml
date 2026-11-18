@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: IMAPClient
-  version: "4.2.0"
+  version: "4.3.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | lower }}-${{ version }}.tar.gz
-  sha256: 777102ced48ab22e3fc372982bb5bed1497c4cc438864d6ec1c9f327ab5f3b3a
+  sha256: 71c9cb3e8ee0835bcae79b49c9059ef26901a308c94261f7a7002bd76ada5ad8
 
 build:
   number: 0
